@@ -34,6 +34,7 @@ a {
 .container {
     width: 90%;
     margin: 0 auto;
+    /* background: #000; */
     /* background: #222; */
     /* padding: 0 2rem; */
     /* background: red; */
@@ -42,9 +43,10 @@ a {
 header {
     height: 100vh;
     width: 100%;
-    background-image: url(../ezgif.com-gif-maker.gif    );
+    /* background-image: url(../a.gif); */
     background-position: center;
-    background-size: cover;
+    background-color: #000;
+    background-size: 60vw;
     background-repeat: no-repeat;
 }
 
@@ -54,6 +56,7 @@ nav {
     align-items: center;
     padding: .5rem;
     height: 64px;
+    /* background: rgb(179, 19, 19);     */
 }
 
 
@@ -160,7 +163,7 @@ nav ul li a:hover {
 .extra {
     text-align: center;
     background: #111;
-    background: linear-gradient(to bottom, #1B1B1D 50%, #191919 50%);
+    /* background: linear-gradient(to bottom, #1B1B1D 50%, #191919 50%); */
 }
 
 .extra p {
@@ -188,18 +191,19 @@ nav ul li a:hover {
 }
 
 .features h1 {
+    font-weight: 800;
     text-align: center;
     font-size: 3rem;
-    color: #717373;
+    color: rgb(233, 230, 230);
 }
 
 .features h1 span {
-    border-bottom: 2px solid #717373;
+    /* border-bottom: 2px solid #717373; */
 }
 
 .features .info {
     text-align: center;
-    margin: .9rem 0;
+    margin: 1.2rem 0;
     font-size: 1.3rem;
     font-weight: 800;
 }
@@ -214,24 +218,29 @@ nav ul li a:hover {
 .feature {
     text-align: center;
     margin: 1rem .5rem;
-    background: #222;
-    border: 1px solid #444;
+    /* background: #222; */
+    border-right: 1px solid #444;
     width: 280px;
     height: 200px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     padding: 10px;
-    box-shadow: 0 0 4px 1px rgba(var(--jb7, 0, 0, 0), .0975);
+    /* box-shadow: 0 0 4px 1px rgba(var(--jb7, 0, 0, 0), .0975); */
 
+}
+
+.feature:last-of-type {
+    border: none;
 }
 
 .feature h2 {
     font-size: 1.3rem;
+    color: #ddd;
     margin: .7rem 0;
 }
 
 .feature p {
     color: #ddd;
-    letter-spacing: .5px;
+    /* letter-spacing: .5px; */
     font-weight: 300;
 }
 
@@ -243,7 +252,7 @@ nav ul li a:hover {
 .why-invest {
     /* background: #1a252f !important; */
     padding: 4rem 0;
-    background: #222;
+    background: #000;
     color: #fff;
     /* background: linear-gradient(5deg, #222, #717373); */
 
@@ -251,23 +260,23 @@ nav ul li a:hover {
 
 .why-invest .feature {
     /* border: 1px solid #283d52; */
-    background: #333 !important;
+    /* background: #333; */
 }
 
 .why-invest h1 {
     text-align: center;
     font-size: 2.9rem;
-    color: #717373;
+    color: #e6e6e6;
     margin: 5px;
 }
 
 .why-invest h2 {
-    color: #fff;
+    color: #ddd;
 }
 
 .why-invest h1 span {
     padding-top: 15px;
-    border-bottom: 2px solid #717373;
+    /* border-bottom: 2px solid #717373; */
 }
 
 .why-invest p {
@@ -275,6 +284,7 @@ nav ul li a:hover {
 }
 
 .why-invest .info {
+    color: #ddd;
     text-align: center;
     margin: .9rem 0;
     font-size: 1.3rem;
@@ -460,6 +470,8 @@ footer {
     .feature {
         width: 98%;
         margin: 0 auto;
+        border-right: none;
+        border-bottom: 1px solid #717373;
     }
 
     .img1 img {
@@ -479,7 +491,7 @@ footer {
 @media screen and (max-width:786px) {
     header {
         background-size: cover;
-        background-image: url(../ezgif.com-gif-maker.gif);
+        /* background-image: url(../ezgif.com-gif-maker.gif); */
         background-color: #000;
     }
 
@@ -502,7 +514,8 @@ footer {
         position: absolute;
         top: 64px;
         left: 0;
-        background: #222;
+        background: #000;
+        opacity: .7;
         color: #717373;
         width: 100% !important;
         text-align: center;
@@ -580,6 +593,8 @@ footer {
         margin: 1rem auto;
         /* background: #fff; */
         width: 95%;
+        border-right: none;
+        border-bottom: 1px solid #222;
     }
 
     /* WHY INVEST */
