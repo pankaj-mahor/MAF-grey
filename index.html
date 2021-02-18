@@ -9,16 +9,17 @@
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
         integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
-        crossorigin="anonymous"/>
-
+        crossorigin="anonymous" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>     -->
     <title>Machine Alpha Fund- Pioneers in Digital Currency Funds Management</title>
+    <script type="text/javascript" src="particles.js"></script>
 </head>
 
 <body>
     <!-- Navbar  -->
 
-    <header>
+    <header id="particles-js">
         <nav class="container" id="nav">
             <div class="logo">
                 <a href="index.html"><img src="./greylogo-r.png" alt="A logo"></a>
@@ -51,9 +52,9 @@
             </div>
         </section>
     </header>
-    
+
     <section class="extra">
-        <div class="container extra">
+        <div class="container extra" data-aos="zoom-in">
             <p>Our solution is financially engineered and powered by AI to deliver the best return on digital assets</p>
         </div>
     </section>
@@ -61,7 +62,7 @@
 
     <!-- Feature Section -->
     <section class="features" id="features">
-        
+
         <div class="container">
             <h1><span>Our Features</span></h1>
             <div class="info">
@@ -95,22 +96,22 @@
     <!-- Why iNvest ? -->
     <section class="why-invest" id="why">
         <div class="container">
-            <h1><Span>Why Invest in Bitcoin?</Span></h1>
+            <h1 data-aos="zoom-in"><Span>Why Invest in Bitcoin?</Span></h1>
             <div class="info">
                 <p><span>Secure | </span> <span> Low Risk | </span> <span>Grow</span></p>
             </div>
             <div class="all-feature">
-                <div class="feature">
+                <div class="feature" data-aos="zoom-in">
                     <img src="https://img.icons8.com/android/50/717373/commodity.png" />
                     <h2>Inf-free</h2>
                     <p>Scarce commodity with a limited supply – beats inflation</p>
                 </div>
-                <div class="feature">
+                <div class="feature" data-aos="zoom-in">
                     <img src="https://img.icons8.com/material-sharp/50/717373/decentralized-network.png" />
                     <h2>Transparent</h2>
                     <p>Transparent and decentralized network </p>
                 </div>
-                <div class="feature">
+                <div class="feature" data-aos="zoom-in" data-aos-duration="800">
                     <img src="https://img.icons8.com/metro/50/717373/private2.png" />
                     <h2>Secure</h2>
                     <p>Transactions are audited and secure</p>
@@ -122,10 +123,10 @@
     <!-- Our Story -->
     <section id="story" class="story">
         <div class="container story-box">
-            <h1><span>Our Story</span></h1>
+            <h1 data-aos="zoom-in"><span>Our Story</span></h1>
 
             <div class="stories">
-                <div class="left">
+                <div class="left" data-aos="zoom-in">
                     <p>“We are at the helm of an early digital transformation” <span>- xx, Director, MFA.ai</span></p>
 
                     <p>In the recent years we have seen a rise in adoption of digital currencies for investment
@@ -143,8 +144,8 @@
                     </p>
                     <a href="#">Learn More</a>
                 </div>
-                <div class="right">
-                    <img src="./img/2748961.png" alt="Our story">
+                <div class="right" data-aos="zoom-in">
+                    <img src="./2748961-r.png" alt="Our story">
                 </div>
             </div>
         </div>
@@ -171,6 +172,7 @@
 
 
     <!-- <script src="./script.js"></script> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         const nav = document.querySelector('nav');
         const bars = document.querySelector('.bars');
@@ -184,7 +186,9 @@
             }
         }
         bars.addEventListener('click', menuEvent);
+        AOS.init();
     </script>
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
 </body>
 
 </html>
